@@ -10,7 +10,7 @@ export const fetchData = async(country) => {
     try {
         //const {data: {confirmed, deaths, lastUpdate, recovered}} = await axios.get(url); 
         const {data: {confirmed, deaths, lastUpdate, recovered}} = await axios.get(changeableUrl); 
-        const modifiedData = {confirmed, deaths, lastUpdate, recovered}
+        //const modifiedData = {confirmed, deaths, lastUpdate, recovered}
         
         return {confirmed, deaths, lastUpdate, recovered}; 
         
