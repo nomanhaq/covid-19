@@ -4,7 +4,7 @@ import GoogleMapReact from "google-map-react";
 import ReactGa from "react-ga";
 
 function GoogleMap() {
-  const [latest, setLatest] = useState([]);
+  //const [latest, setLatest] = useState([]);
   const [results, setResults] = useState([]);
 
   useEffect(() => {
@@ -16,8 +16,9 @@ function GoogleMap() {
         axios.get("https://corona.lmao.ninja/v2/all"),
         axios.get("https://corona.lmao.ninja/v2/countries"),
       ])
+      
       .then((responseArr) => {
-        setLatest(responseArr[0].data);
+        //setLatest(responseArr[0].data);
         setResults(responseArr[1].data);
       })
       .catch((err) => {
