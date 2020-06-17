@@ -5,6 +5,7 @@ import { fetchData } from './api';
 import image from './images/image.png';
 
 import Bottoms from './components/Bottom/bottoms'; 
+import GoogleMap from './components/Google/GoogleMap'
 
 class App extends React.Component {
     state = { 
@@ -33,6 +34,7 @@ class App extends React.Component {
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
                 <Charts data={data} country={country}/> 
+                <GoogleMap/>
                 <Bottoms />
             </div>
         ) 
